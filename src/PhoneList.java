@@ -43,7 +43,7 @@ public class PhoneList {
 	 */
 	public List<Phone> getAllPhones() {
 		// TODO: return an unmodifiable view of the list
-		return allPhones;
+		return Collections.unmodifiableList(allPhones);
 	}
 	
 	/*
@@ -52,6 +52,6 @@ public class PhoneList {
 	 */
 	public Collection<Phone> getBestPhones() {
 		// TODO: return an unmodifiable view of the set
-		return bestPhones;
+		return Collections.unmodifiableSet(bestPhones);
 	}
 }
